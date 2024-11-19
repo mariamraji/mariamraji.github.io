@@ -1,0 +1,134 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: white;
+}
+
+header {
+    display: flex;
+    align-items: center; /* Align items (logo and name) vertically */
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-bottom: 2px solid #ddd;
+}
+
+.logo-container {
+    flex-shrink: 0; /* Prevent the logo from shrinking */
+    margin-right: 20px;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%; /* Makes the logo circular */
+    object-fit: cover; /* Ensures the image maintains aspect ratio */
+    border: 3px solid #5c5757;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between; /* Space between name and buttons */
+    align-items: center; /* Align name and buttons vertically */
+    flex-grow: 1; /* Allows the content to grow and use the available space */
+}
+
+.header-content h1 {
+    margin: 0;
+    font-size: 1.8rem;
+    color: #333;
+    font-size: 250%;
+}
+
+.contact-buttons {
+    display: flex;
+    gap: 10px; /* Adds spacing between the buttons */
+}
+
+.button {
+    text-decoration: none;
+    background-color: darkgoldenrod;
+    color: white;
+    padding: 8px 12px; /* Compact padding */
+    font-size: 0.9rem;
+    border-radius: 5px;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: grey;
+}
+
+
+section {
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+}
+h2 {
+    color: #333;
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+ul li {
+    background: #f9f9f9;
+    margin: 5px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}
+
+.job-description {
+    display: none; /* Initially hidden */
+    padding: 10px;
+    background-color: #fff;
+}
+
+.job-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f4f4f4;
+    padding: 10px;
+    cursor: pointer;
+    border: 1px solid #ddd;
+}
+
+.toggle-btn {
+    background-color: darkgoldenrod;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.toggle-btn:hover {
+    background-color: grey;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Creates 3 equal-width columns */
+    gap: 10px; /* Adds space between the items */
+    list-style-type: none; /* Removes default list styling */
+    padding: 0;
+    margin: 0;
+}
+
+.skills-grid li {
+    background-color: #f9f9f9; /* Adds a light background to the skill items */
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    text-align: left; /* Centers the text within each skill box */
+}
